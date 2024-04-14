@@ -19,7 +19,7 @@ jobs:
       
 
       - name: Build Docker image
-        run: docker build -t docker build -t cdapdev2020/djangoapiauthjwt:latest .
+        run: docker build -t cdapdev2020/djangoapiauthjwt:latest .
 
       - name: Push Docker image
-        run: docker push docker build -t cdapdev2020/djangoapiauthjwt:latest 
+        run: docker push cdapdev2020/djangoapiauthjwt:latest 
