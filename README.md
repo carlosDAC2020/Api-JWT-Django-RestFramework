@@ -73,3 +73,21 @@ Content-Type: application/json
 GET /tasks/
 Authorization: Token {your_token_here}
 ```
+
+## IC
+se usa Github actions para la integracion continua siguiendo los siguientes pasoso 
+
+- tener la aplicacion ya lista 
+- escribir el dokerfile correspondiente para generar la imagen de la aplicacion, en el caso de este repo se hace uno especialmente para una aplicacion de django. tener el .dockerignore para cuando se suba la imagen.
+- teniendo lo anterior listo iremos a la seccion actions de nuestro repo en github 
+![Auth](/caps/actions%20init.PNG)
+Hay varias configuiracion segun el tipo de aplicacion pero usaremos el generico q es Manual workflow
+- Al dar en configurar se nos genera una carpeta que tiene nuestro archivo manual.yml el cual editamos de la siguiente ,anera
+![Auth](/caps/manual.PNG)
+lo q se hace es describir los comandos que debe seguirse para publicar nuestra imagen en docker hub-
+- pero para q esto funcione se agregar un token de acceso de docker hub el cual podemos generar en neustra cuenta de docker hub
+![Auth](/caps/tocken%20docker.PNG)
+guardamos el valor del tocken en alguna parte 
+- agregamos nuestro token a los secrets de nuestro repo
+![Auth](/caps/secret.PNG)
+- finalmente al hacer cualquier cambio en nuestro codigo y hacer un commit nuestri pypline para desplegar nuestra imagen se ejecutara 
