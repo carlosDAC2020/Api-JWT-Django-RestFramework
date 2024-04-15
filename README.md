@@ -91,3 +91,6 @@ guardamos el valor del tocken en alguna parte
 - agregamos nuestro token a los secrets de nuestro repo
 ![Auth](/caps/secret.PNG)
 - finalmente al hacer cualquier cambio en nuestro codigo y hacer un commit nuestri pypline para desplegar nuestra imagen se ejecutara 
+![Auth](/caps/ejecucion.PNG)
+- ya podriamos ver nuestra imagen en nuestro repo de docker hub 
+![Auth](/caps/image%20in%20docker.PNG)
